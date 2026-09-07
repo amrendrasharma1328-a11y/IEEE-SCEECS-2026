@@ -1,3 +1,4 @@
+
 function RegistrationFeeTable() {
   const registrationData = [
     {
@@ -60,15 +61,14 @@ function RegistrationFeeTable() {
                   </th>
                 </tr>
               </thead>
-              
+
               {/* Table Body */}
               <tbody>
                 {registrationData.map((row, index) => (
-                  <tr 
-                    key={index} 
-                    className={`${
-                      index % 2 === 0 ? 'bg-gray-50' : 'bg-white'
-                    } hover:bg-gray-100 transition-colors`}
+                  <tr
+                    key={index}
+                    className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'
+                      } hover:bg-gray-100 transition-colors`}
                   >
                     <td className="px-6 py-4 text-gray-900 font-medium text-sm md:text-base border-r border-gray-200">
                       {row.category}

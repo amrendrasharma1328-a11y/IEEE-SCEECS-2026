@@ -2,22 +2,22 @@ import { PixelImage } from '../components/pixel-image';
 
 const teamMembers = [
   {
-    name: "Mr. Vedant Jaiswal",
+    name: "Mr. Ayush Kumar",
     role: "Organizing Co-chair",
     image: "https://images.unsplash.com/photo-1752779588144-938ea861bf05?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
   },
   {
-    name: "Ms Yashika Lawani",
+    name: "Ms. Rishabh Sonkar",
     role: "Publication Co-chair",
     image: "https://images.unsplash.com/photo-1752779588144-938ea861bf05?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
   },
   {
-    name: "Ms. Priyanshi Khandelwal",
+    name: "Ms. Rahul Agarwal",
     role: "Program Co-chair",
     image: "https://images.unsplash.com/photo-1752779588144-938ea861bf05?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
   },
   {
-    name: "Mr. Vivek Kumar",
+    name: "Ms. Tanvi Sundarkar",
     role: "Finance Co-chair",
     image: "https://images.unsplash.com/photo-1752779588144-938ea861bf05?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
   }
@@ -29,21 +29,21 @@ function ContactTeam() {
       <div className="container mx-auto max-w-7xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <p className="text-purple-600 text-lg font-medium mb-2">Welcome To SCEECS'26</p>
+          <p className="text-purple-600 text-lg font-medium mb-2">Welcome To SCEECS'27</p>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
             Contact Team
           </h1>
           <div className="flex justify-center">
-            <svg 
-              className="w-32 h-2 text-pink-400" 
-              viewBox="0 0 128 4" 
-              fill="none" 
+            <svg
+              className="w-32 h-2 text-pink-400"
+              viewBox="0 0 128 4"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path 
-                d="M2 2C18 1, 38 3, 54 2C70 1, 90 3, 106 2C114 1.5, 122 2, 126 2" 
-                stroke="currentColor" 
-                strokeWidth="2" 
+              <path
+                d="M2 2C18 1, 38 3, 54 2C70 1, 90 3, 106 2C114 1.5, 122 2, 126 2"
+                stroke="currentColor"
+                strokeWidth="2"
                 strokeLinecap="round"
               />
             </svg>

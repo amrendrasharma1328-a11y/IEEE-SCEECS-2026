@@ -6,7 +6,7 @@ const speakers = [
     title: "Love Babbar",
     step: "Expert Speaker",
     content: "Renowned expert in technology and innovation, bringing years of industry experience and cutting-edge insights to inspire the next generation of engineers and researchers.",
-    image: "/guest/final.webp" 
+    image: "/guest/final.webp"
   },
   {
     title: "Sunchit Dudeja",
@@ -23,7 +23,7 @@ const speakers = [
   {
     title: "Many More",
     step: "Distinguished Speakers",
-    content: "Join us for an exciting lineup of distinguished speakers and industry leaders who will share their expertise and insights at SCEECS 2026.",
+    content: "Join us for an exciting lineup of distinguished speakers and industry leaders who will share their expertise and insights at SCEECS 2027.",
     image: "/guest/lakshya_kumar.jpeg"
   }
 ];
@@ -34,7 +34,7 @@ function GuestLectures() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'26</p>
+          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'27</p>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
             Guest Lectures
           </h1>
@@ -60,7 +60,7 @@ function GuestLectures() {
 
         {/* Know our Speakers Button */}
         <div className="text-center mb-12">
-          <Link 
+          <Link
             to="/guestlecturers"
             className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-lg"
           >

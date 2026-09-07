@@ -40,12 +40,12 @@ const guestLecturers = [
 function GuestLecturers() {
     return (
         <>
-            <Hero src="/background/10.jpg" content="Guest Lecture"/>
+            <Hero src="/background/10.jpg" content="Guest Lecture" />
             <div className="min-h-screen bg-white py-16 px-4 md:px-8 mt-12">
                 <div className="max-w-7xl mx-auto">
                     {/* Header Section */}
                     <div className="text-center mb-12">
-                        <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'26</p>
+                        <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'27</p>
                         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
                             Guest Lecturers
                         </h1>

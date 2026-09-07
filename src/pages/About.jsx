@@ -50,7 +50,7 @@ const features = [
 function About() {
   return (
     <div className="min-h-screen bg-white mt-8">
-      <Hero src="/background/10.jpg" content="About Us"/>
+      <Hero src="/background/10.jpg" content="About Us" />
       {/* Header Section */}
       <div className="py-16 px-4 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -60,7 +60,7 @@ function About() {
               ABOUT SCEECS
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-4 sm:mb-6">
-              SCEECS 2026
+              SCEECS 2027
             </h1>
             <div className="flex justify-center mb-6 sm:mb-8">
               <svg

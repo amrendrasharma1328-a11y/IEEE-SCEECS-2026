@@ -33,18 +33,18 @@ export function Footer() {
           <div className="flex flex-col items-start justify-start gap-6 max-w-md">
             {/* Logos */}
             <div className="flex items-center gap-6">
-              <img 
-                src="/IEEE.png" 
-                alt="IEEE Logo" 
+              <img
+                src="/IEEE.png"
+                alt="IEEE Logo"
                 className="h-12 md:h-16 object-contain"
               />
-              <img 
-                src="/logo2026_dark.png" 
-                alt="SCEECS 2026 Logo" 
+              <img
+                src="/logo2027_dark.png"
+                alt="SCEECS 2027 Logo"
                 className="h-12 md:h-16 object-contain"
               />
             </div>
-            
+
             {/* IEEE Description */}
             <p className="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
               IEEE is the world's largest technical professional organization. It is dedicated to the advancement of technology for the betterment of humanity.
@@ -64,9 +64,9 @@ export function Footer() {
                     className="group inline-flex cursor-pointer items-center justify-start gap-1 text-sm text-gray-600 hover:text-blue-900 transition-colors"
                   >
                     {link.url.startsWith('http') ? (
-                      <a 
-                        href={link.url} 
-                        target="_blank" 
+                      <a
+                        href={link.url}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1"
                       >
@@ -74,7 +74,7 @@ export function Footer() {
                         <ChevronRight className="h-4 w-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
                       </a>
                     ) : (
-                      <Link 
+                      <Link
                         to={link.url}
                         className="flex items-center gap-1"
                       >
@@ -93,7 +93,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-600 text-sm text-center md:text-left">
-              © 2026 SCEECS. All rights reserved.
+              © 2027 SCEECS. All rights reserved.
             </p>
             <p className="text-gray-600 text-sm text-center md:text-right">
               IEEE Student Branch, MANIT Bhopal

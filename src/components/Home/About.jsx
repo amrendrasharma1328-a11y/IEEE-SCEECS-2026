@@ -4,7 +4,7 @@ function About() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'26</p>
+          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'27</p>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
             About SCEECS
           </h1>

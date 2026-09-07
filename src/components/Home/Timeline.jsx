@@ -5,7 +5,7 @@ const HowItWorkTimeline = () => {
     const data = [
         {
             title: "SUBMISSIONS OPEN",
-            date: "1 Sep 2025",
+            date: "10 Oct 2026",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold mb-4">
@@ -39,7 +39,7 @@ const HowItWorkTimeline = () => {
         },
         {
             title: "Acceptance Notification",
-            date: "18 Dec 2025",
+            date: "19 Dec 2026",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
@@ -48,12 +48,12 @@ const HowItWorkTimeline = () => {
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                         Authors of accepted papers will receive formal notification via email along with detailed instructions for preparing the camera-ready version. The notification will include reviewer comments, required revisions, and important deadlines for camera-ready submission and registration. Please ensure your contact email is up-to-date in the submission system.
                     </p>
-                        </div>
+                </div>
             ),
         },
         {
             title: "Camera Ready Submissions",
-            date: "25 Dec 2025",
+            date: "25 Dec 2026",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
@@ -62,12 +62,12 @@ const HowItWorkTimeline = () => {
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-3">
                         Authors of accepted papers must submit the final camera-ready version incorporating all reviewer comments and following the IEEE conference template guidelines. The camera-ready submission must include all required forms, copyright transfer agreement, and proofreading. Simultaneously, at least one author from each accepted paper must register for the conference to ensure paper inclusion in the proceedings.
                     </p>
-                        </div>
+                </div>
             ),
         },
         {
             title: "Paper Presentation",
-            date: "31 Jan-1 Feb 2026",
+            date: "30 Jan-31st Jan 2027",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
@@ -76,8 +76,8 @@ const HowItWorkTimeline = () => {
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-3">
                         The conference will be conducted in hybrid mode, allowing authors to present their research either in-person at the conference venue or remotely via virtual platforms. Each presentation will be allocated a specific time slot within technical sessions, followed by a Q&A session where authors can interact with the audience and receive feedback.
                     </p>
-                    
-                        </div>
+
+                </div>
             ),
         },
         {
@@ -86,7 +86,7 @@ const HowItWorkTimeline = () => {
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold">
-                        Accepted papers will be published in the SCEECS 2026 Conference Proceedings and submitted to IEEE Xplore.
+                        Accepted papers will be published in the SCEECS 2027 Conference Proceedings and submitted to IEEE Xplore.
                     </p>
                 </div>
             ),
@@ -94,7 +94,7 @@ const HowItWorkTimeline = () => {
     ];
     return (
         <div className="w-full">
-                <Timeline data={data} />
+            <Timeline data={data} />
         </div>
     )
 }
