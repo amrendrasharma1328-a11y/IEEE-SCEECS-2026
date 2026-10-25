@@ -150,17 +150,17 @@ function HeroVideo({ videoSrc, title, subtitle, description, className, showHead
   // Animation starts immediately and completes at 100% scroll
   // Use the scroll progress directly for smooth animation
   const adjustedProgress = useTransform(scrollYProgress, [0, 1], [0, 1])
-  
+
   // Responsive inset values - more dramatic change for better visibility
   // Start with significant inset (smaller video) and expand to full size
   // More dramatic on mobile for better visibility
   const insetY = useTransform(adjustedProgress, [0, 1], [30, 0])
   const insetX = useTransform(adjustedProgress, [0, 1], [40, 0])
   const roundedness = useTransform(adjustedProgress, [0, 1], [1000, 16])
-  
+
   // Add scale transform for additional visual effect
   const scale = useTransform(adjustedProgress, [0, 1], [0.85, 1])
-  
+
   const clipPath = useMotionTemplate`inset(${insetY}% ${insetX}% ${insetY}% ${insetX}% round ${roundedness}px)`
 
   return (
@@ -175,7 +175,7 @@ function HeroVideo({ videoSrc, title, subtitle, description, className, showHead
             </ContainerAnimated>
             <ContainerAnimated animation="bottom" className="mb-6">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900">
-                {title || "SCEECS 2026"}
+                {title || "SCEECS 2027"}
               </h1>
             </ContainerAnimated>
             <ContainerAnimated animation="bottom" className="mb-8">

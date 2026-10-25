@@ -43,14 +43,14 @@ const defaultMenuItems = [
   }
 ]
 
-function ScrollNavigationMenu({ 
+function ScrollNavigationMenu({
   menuItems = defaultMenuItems,
   className = ""
 }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [hoveredItem, setHoveredItem] = useState(null)
-  
+
   const { scrollY } = useScroll()
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -130,7 +130,7 @@ function ScrollNavigationMenu({
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}>
               <Link to="/" className="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
-                <img src="/logo2026_dark.png" alt="log" className="w-full h-full object-cover" />
+                <img src="/logo2027_dark.png" alt="log" className="w-full h-full object-cover" />
               </Link>
             </motion.div>
 

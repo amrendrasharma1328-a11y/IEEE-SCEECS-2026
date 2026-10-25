@@ -4,98 +4,176 @@ import { Timeline } from '../ui/timeline';
 const HowItWorkTimeline = () => {
     const data = [
         {
-            title: "SUBMISSIONS OPEN",
-            date: "1 Sep 2025",
+            title: "Release of Call for Papers",
+            date: "24 Oct 2026",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
-                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-4">
-                        Submit paper on Microsoft CMT.
-                    </p>
-                    <a href="#" className="text-pink-500 hover:text-pink-600 text-sm md:text-base mb-4 inline-block">
-                        here
-                    </a>
-                    <p className="text-gray-800 font-semibold text-base md:text-lg mb-2">
-                        Acknowledgement
+                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-2">
+                        Official Call for Papers Released
                     </p>
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                        The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+                        Call for Papers announced and paper submissions open via the Microsoft CMT portal for IEEE SCEECS 2027.
                     </p>
                 </div>
             ),
         },
         {
-            title: "REVIEW",
-            date: "WILL BE INFORMED",
+            title: "Call for Reviewers",
+            date: "1st Week of Nov 2026",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
-                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
-                        Paper is blind reviewed by experts.
+                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-2">
+                        Release of Call for Reviewers
                     </p>
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                        All submitted papers undergo a rigorous double-blind peer review process conducted by a panel of international experts in the field. The review process evaluates papers based on originality, technical quality, clarity, and relevance to the conference themes. Authors will be informed about the review status and feedback from reviewers.
+                        Invitations and call for expert peer reviewers and technical program committee members initiated.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Initial Reviews Start",
+            date: "1st Week of Nov 2026",
+            content: (
+                <div className="bg-gray-50 rounded-lg p-6">
+                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-2">
+                        Peer Review Process Commences
+                    </p>
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                        Initial rounds of rigorous double-blind peer review commence for early-submitted research manuscripts.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Paper Submission Deadline",
+            date: "20 Nov 2026",
+            content: (
+                <div className="bg-gray-50 rounded-lg p-6">
+                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-2">
+                        Full Paper Submission Deadline
+                    </p>
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                        Deadline for full research manuscript submissions via Microsoft CMT (until 23:59 IST).
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Meta Reviews Start",
+            date: "3rd Week of Nov 2026",
+            content: (
+                <div className="bg-gray-50 rounded-lg p-6">
+                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-2">
+                        Meta Reviews & Deliberation
+                    </p>
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                        Track chairs begin meta-review evaluations and cross-reviewer deliberation on submitted papers.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Mailing of Selected Papers",
+            date: "3rd Week of Dec 2026",
+            content: (
+                <div className="bg-gray-50 rounded-lg p-6">
+                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-2">
+                        Reviewer Feedback & Decisions
+                    </p>
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                        Reviewer feedback, decision letters, and revision guidelines shared with authors of selected papers.
                     </p>
                 </div>
             ),
         },
         {
             title: "Acceptance Notification",
-            date: "18 Dec 2025",
+            date: "20 Dec 2026",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
-                        Accepted papers will be notified through email.
+                        Formal Acceptance Notification
                     </p>
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                        Authors of accepted papers will receive formal notification via email along with detailed instructions for preparing the camera-ready version. The notification will include reviewer comments, required revisions, and important deadlines for camera-ready submission and registration. Please ensure your contact email is up-to-date in the submission system.
+                        Authors of accepted papers will receive formal notification via email along with detailed instructions for preparing the camera-ready version and registration.
                     </p>
-                        </div>
+                </div>
+            ),
+        },
+        {
+            title: "Early Registration",
+            date: "31 Dec 2026",
+            content: (
+                <div className="bg-gray-50 rounded-lg p-6">
+                    <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
+                        Early Bird Registration Deadline
+                    </p>
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-3">
+                        Deadline for completing conference author registration at early bird rates. At least one author from each accepted paper must register to ensure paper inclusion.
+                    </p>
+                </div>
             ),
         },
         {
             title: "Camera Ready Submissions",
-            date: "25 Dec 2025",
+            date: "31 Dec 2026",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
-                        Camera Ready Submission and Registration will be open for accepted papers.
+                        Camera Ready Manuscript Deadline
                     </p>
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-3">
-                        Authors of accepted papers must submit the final camera-ready version incorporating all reviewer comments and following the IEEE conference template guidelines. The camera-ready submission must include all required forms, copyright transfer agreement, and proofreading. Simultaneously, at least one author from each accepted paper must register for the conference to ensure paper inclusion in the proceedings.
+                        Authors of accepted papers must submit the final camera-ready version incorporating all reviewer comments, IEEE formatting, and signed copyright forms.
                     </p>
-                        </div>
+                </div>
             ),
         },
         {
-            title: "Paper Presentation",
-            date: "31 Jan-1 Feb 2026",
+            title: "Conference Dates",
+            date: "30 Jan - 31 Jan 2027",
             content: (
                 <div className="bg-gray-50 rounded-lg p-6">
                     <p className="text-gray-900 text-lg md:text-xl font-bold mb-3">
-                        Accepted Papers will be presented in conference in hybrid mode.
+                        Paper Presentation in Hybrid Mode
                     </p>
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-3">
-                        The conference will be conducted in hybrid mode, allowing authors to present their research either in-person at the conference venue or remotely via virtual platforms. Each presentation will be allocated a specific time slot within technical sessions, followed by a Q&A session where authors can interact with the audience and receive feedback.
-                    </p>
-                    
-                        </div>
-            ),
-        },
-        {
-            title: "PUBLISH",
-            date: "WILL BE INFORMED",
-            content: (
-                <div className="bg-gray-50 rounded-lg p-6">
-                    <p className="text-gray-900 text-lg md:text-xl font-bold">
-                        Accepted papers will be published in the SCEECS 2026 Conference Proceedings and submitted to IEEE Xplore.
+                        The conference will be conducted in hybrid mode (physical at MANIT Bhopal & virtual platforms). Accepted papers will be presented and submitted for publication in IEEE Xplore.
                     </p>
                 </div>
             ),
         },
     ];
     return (
-        <div className="w-full">
-                <Timeline data={data} />
-        </div>
+        <section id="important-dates" className="w-full bg-white py-12 px-4 md:px-8">
+            <div className="max-w-7xl mx-auto text-center mb-8">
+                <p className="text-purple-600 text-sm md:text-base font-semibold uppercase tracking-wider mb-2">
+                    Schedule & Milestones
+                </p>
+                <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+                    Important Dates
+                </h2>
+                <div className="flex justify-center mb-4">
+                    <svg
+                        className="w-32 h-2 text-pink-400"
+                        viewBox="0 0 128 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M2 2C18 1, 38 3, 54 2C70 1, 90 3, 106 2C114 1.5, 122 2, 126 2"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                        />
+                    </svg>
+                </div>
+                <p className="text-gray-700 text-base md:text-lg max-w-2xl mx-auto font-medium">
+                    Conference Dates: <span className="text-purple-700 font-bold">30th Jan – 31st Jan 2027</span> | MANIT Bhopal, India
+                </p>
+            </div>
+            <Timeline data={data} />
+        </section>
     )
 }
 

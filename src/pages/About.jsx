@@ -50,7 +50,7 @@ const features = [
 function About() {
   return (
     <div className="min-h-screen bg-white mt-8">
-      <Hero src="/background/10.jpg" content="About Us"/>
+      <Hero src="/background/10.jpg" content="About Us" />
       {/* Header Section */}
       <div className="py-16 px-4 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -60,7 +60,7 @@ function About() {
               ABOUT SCEECS
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-4 sm:mb-6">
-              SCEECS 2026
+              SCEECS 2027
             </h1>
             <div className="flex justify-center mb-6 sm:mb-8">
               <svg
@@ -124,9 +124,37 @@ function About() {
       {/* IEEE MANIT Student Branch Section */}
       <IEEEManitBranch />
 
-      {/* Team and Gallery Section */}
-      <div className="py-16 px-4 md:px-8 bg-white">
+      {/* Committee and Gallery Section */}
+      <div id="committee" className="py-16 px-4 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
+          {/* Organizing Committee Section Header */}
+          <div className="text-center mb-12">
+            <p className="text-purple-600 text-sm sm:text-base font-semibold uppercase tracking-wider mb-2">
+              Leadership & Organization
+            </p>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+              Organizing Committee
+            </h2>
+            <div className="flex justify-center mb-4">
+              <svg
+                className="w-32 h-2 text-pink-400"
+                viewBox="0 0 128 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 2C18 1, 38 3, 54 2C70 1, 90 3, 106 2C114 1.5, 122 2, 126 2"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+              Meet the faculty chairs, advisors, and organizing committee driving IEEE SCEECS 2027.
+            </p>
+          </div>
+
           {/* Team Members Section */}
           <Team />
 

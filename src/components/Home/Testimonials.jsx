@@ -45,7 +45,7 @@ function Testimonials() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'26</p>
+          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'27</p>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
             Precious remarks by Past Speakers
           </h1>
@@ -87,8 +87,8 @@ function Testimonials() {
                     <div
                       className={cn(
                         "relative rounded-2xl p-6 md:p-8 transition-all duration-500 mx-auto",
-                        isActive 
-                          ? `${themeColor.bg} ${themeColor.text} shadow-2xl z-50` 
+                        isActive
+                          ? `${themeColor.bg} ${themeColor.text} shadow-2xl z-50`
                           : "bg-white text-gray-900 border-2 border-gray-200 shadow-lg z-10"
                       )}
                       style={{
@@ -103,7 +103,7 @@ function Testimonials() {
                       )}>
                         "
                       </div>
-                      
+
                       {/* Quote Text */}
                       <p className={cn(
                         "text-base md:text-lg font-medium leading-relaxed mb-6 relative z-10",
@@ -117,14 +117,14 @@ function Testimonials() {
                     <div className="mt-6 flex flex-col items-center">
                       <div className={cn(
                         "relative rounded-full overflow-hidden border-4 transition-all duration-500",
-                        isActive 
-                          ? `${themeColor.border} shadow-lg` 
+                        isActive
+                          ? `${themeColor.border} shadow-lg`
                           : "border-gray-300"
                       )}
-                      style={{
-                        width: "100px",
-                        height: "100px"
-                      }}>
+                        style={{
+                          width: "100px",
+                          height: "100px"
+                        }}>
                         <img
                           src={testimonial.image}
                           alt={testimonial.name}

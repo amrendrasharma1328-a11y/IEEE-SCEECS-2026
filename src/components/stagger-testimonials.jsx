@@ -51,11 +51,11 @@ const getThemeColor = (themeIndex) => {
   return themes[themeIndex % 3];
 };
 
-const TestimonialCard = ({ 
-  position, 
-  testimonial, 
-  handleMove, 
-  cardSize 
+const TestimonialCard = ({
+  position,
+  testimonial,
+  handleMove,
+  cardSize
 }) => {
   const isCenter = position === 0;
   const themeColor = getThemeColor(testimonial.themeIndex || 0);
@@ -65,8 +65,8 @@ const TestimonialCard = ({
       onClick={() => handleMove(position)}
       className={cn(
         "absolute left-1/2 top-1/2 cursor-pointer border-2 p-8 transition-all duration-500 ease-in-out",
-        isCenter 
-          ? `${themeColor.bg} ${themeColor.text} ${themeColor.border}` 
+        isCenter
+          ? `${themeColor.bg} ${themeColor.text} ${themeColor.border}`
           : "bg-white text-gray-900 border-gray-200 hover:border-gray-300"
       )}
       style={{
@@ -153,7 +153,7 @@ export const StaggerTestimonials = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'26</p>
+          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'27</p>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
             Precious remarks by Past Speakers
           </h1>
@@ -178,43 +178,43 @@ export const StaggerTestimonials = () => {
         <div
           className="relative w-full overflow-hidden bg-gray-50"
           style={{ height: 600 }}>
-      {testimonialsList.map((testimonial, index) => {
-        const position = testimonialsList.length % 2
-          ? index - (testimonialsList.length + 1) / 2
-          : index - testimonialsList.length / 2;
-        return (
-          <TestimonialCard
-            key={testimonial.tempId}
-            testimonial={testimonial}
-            handleMove={handleMove}
-            position={position}
-            cardSize={cardSize} />
-        );
-      })}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
-        <button
-          onClick={() => handleMove(-1)}
-          className={cn(
-            "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
-            "bg-white border-2 border-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-800",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
-          )}
-          aria-label="Previous testimonial">
-          <ChevronLeft />
-        </button>
-        <button
-          onClick={() => handleMove(1)}
-          className={cn(
-            "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
-            "bg-white border-2 border-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-800",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
-          )}
-          aria-label="Next testimonial">
-          <ChevronRight />
-        </button>
+          {testimonialsList.map((testimonial, index) => {
+            const position = testimonialsList.length % 2
+              ? index - (testimonialsList.length + 1) / 2
+              : index - testimonialsList.length / 2;
+            return (
+              <TestimonialCard
+                key={testimonial.tempId}
+                testimonial={testimonial}
+                handleMove={handleMove}
+                position={position}
+                cardSize={cardSize} />
+            );
+          })}
+          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+            <button
+              onClick={() => handleMove(-1)}
+              className={cn(
+                "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
+                "bg-white border-2 border-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-800",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
+              )}
+              aria-label="Previous testimonial">
+              <ChevronLeft />
+            </button>
+            <button
+              onClick={() => handleMove(1)}
+              className={cn(
+                "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
+                "bg-white border-2 border-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-800",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
+              )}
+              aria-label="Next testimonial">
+              <ChevronRight />
+            </button>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
     </div>
   );
 };

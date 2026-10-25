@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
 
-    const HeroImages = [
+  const HeroImages = [
     {
       src: "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1200",
       alt: "Mountain landscape",

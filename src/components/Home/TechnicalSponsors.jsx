@@ -35,7 +35,7 @@ function TechnicalSponsors() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <p className="text-purple-600 text-lg md:text-xl font-medium mb-2">
-            Welcome To SCEECS 2026
+            Welcome To SCEECS 2027
           </p>
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
             Technical Sponsors
