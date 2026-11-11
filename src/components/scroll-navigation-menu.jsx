@@ -25,7 +25,7 @@ const defaultMenuItems = [
   },
   {
     id: 4,
-    title: "Guest Lecturers",
+    title: "Past Speakers",
     url: "/guestlecturers",
     icon: <Users className="w-5 h-5" />
   },
@@ -216,7 +216,7 @@ function ScrollNavigationMenu({
               exit="closed"
               className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50">
               <div
-                className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-2xl min-w-[300px]">
+                className="relative bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-2xl w-full w-[90vw] max-w-[340px]">
                 {/* Close Button */}
                 <motion.button
                   onClick={toggleMenu}
@@ -227,7 +227,7 @@ function ScrollNavigationMenu({
                 </motion.button>
 
                 {/* Menu Items */}
-                <div className="space-y-4 mt-8">
+                <div className="space-y-2 sm:space-y-4 mt-6 sm:mt-8">
                   {menuItems.map((item, index) => (
                     <motion.div
                       key={item.id}
@@ -237,14 +237,14 @@ function ScrollNavigationMenu({
                       <Link
                         to={item.url}
                         onClick={toggleMenu}
-                        className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-100 transition-colors group">
+                        className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-colors group">
                         <motion.div
                           className="text-indigo-600"
                           whileHover={{ rotate: 360 }}
                           transition={{ duration: 0.3 }}>
                           {item.icon}
                         </motion.div>
-                        <span className="text-lg font-medium text-gray-900 group-hover:text-indigo-600">
+                        <span className="text-base sm:text-lg font-medium text-gray-900 group-hover:text-indigo-600">
                           {item.title}
                         </span>
                       </Link>
@@ -286,4 +286,3 @@ function ScrollNavigationMenu({
 }
 
 export default ScrollNavigationMenu;
-

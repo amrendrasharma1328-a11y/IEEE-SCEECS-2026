@@ -1,20 +1,21 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import { LogoCarousel } from '../ui/logo-carousel';
 
 const sponsorImages = [
-  "/sponsors/1.png",
-  "/sponsors/2.png",
-  "/sponsors/3.png",
-  "/sponsors/4.png",
-  "/sponsors/5.png",
-  "/sponsors/6.png",
-  "/sponsors/7.png",
-  "/sponsors/balsamiq2.png",
-  "/sponsors/coding-thinker-logo.png",
-  "/sponsors/codingNinjas.png",
-  "/sponsors/EDtimes.png",
-  "/sponsors/hitbullseye-logo.png",
-  "/sponsors/ibuddy2.png",
-  "/sponsors/RagaAI.png",
+  cloudinaryImage("/sponsors/1.png"),
+  cloudinaryImage("/sponsors/2.png"),
+  cloudinaryImage("/sponsors/3.png"),
+  cloudinaryImage("/sponsors/4.png"),
+  cloudinaryImage("/sponsors/5.png"),
+  cloudinaryImage("/sponsors/6.png"),
+  cloudinaryImage("/sponsors/7.png"),
+  cloudinaryImage("/sponsors/balsamiq2.png"),
+  cloudinaryImage("/sponsors/coding-thinker-logo.png"),
+  cloudinaryImage("/sponsors/codingNinjas.png"),
+  cloudinaryImage("/sponsors/EDtimes.png"),
+  cloudinaryImage("/sponsors/hitbullseye-logo.png"),
+  cloudinaryImage("/sponsors/ibuddy2.png"),
+  cloudinaryImage("/sponsors/RagaAI.png"),
 ];
 
 // Convert image paths to logo objects with img components

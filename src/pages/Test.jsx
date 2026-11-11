@@ -1,10 +1,11 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import React from 'react'
 import Hero from '@/components/Hero'
 
 const Test = () => {
   return (
     <div>
-        <Hero src="/background/bg2.jpg" />
+        <Hero src={cloudinaryImage("/background/bg2.jpg")} />
     </div>
   )
 }

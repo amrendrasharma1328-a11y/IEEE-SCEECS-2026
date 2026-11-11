@@ -1,11 +1,12 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import { motion } from 'framer-motion';
 
 const sponsors = [
-  { image: "/About_Images/2.png", alt: "Sponsor 2" },
-  { image: "/About_Images/5.png", alt: "Sponsor 5" },
-  { image: "/About_Images/6.png", alt: "Sponsor 6" },
-  { image: "/About_Images/7.png", alt: "Sponsor 7" },
-  { image: "/About_Images/16.png", alt: "Sponsor 16" },
+  { image: cloudinaryImage("/About_Images/2.png"), alt: "Sponsor 2" },
+  { image: cloudinaryImage("/About_Images/5.png"), alt: "Sponsor 5" },
+  { image: cloudinaryImage("/About_Images/6.png"), alt: "Sponsor 6" },
+  { image: cloudinaryImage("/About_Images/7.png"), alt: "Sponsor 7" },
+  { image: cloudinaryImage("/About_Images/16.png"), alt: "Sponsor 16" },
 ];
 
 function SponsorsSection() {

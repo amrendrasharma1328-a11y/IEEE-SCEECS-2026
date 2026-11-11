@@ -64,7 +64,7 @@ const TestimonialCard = ({
     <div
       onClick={() => handleMove(position)}
       className={cn(
-        "absolute left-1/2 top-1/2 cursor-pointer border-2 p-8 transition-all duration-500 ease-in-out",
+        "absolute left-1/2 top-1/2 cursor-pointer border-2 p-5 sm:p-8 transition-all duration-500 ease-in-out",
         isCenter
           ? `${themeColor.bg} ${themeColor.text} ${themeColor.border}`
           : "bg-white text-gray-900 border-gray-200 hover:border-gray-300"
@@ -73,40 +73,40 @@ const TestimonialCard = ({
         width: cardSize,
         height: cardSize,
         zIndex: isCenter ? 50 : Math.max(10 - Math.abs(position), 1),
-        clipPath: `polygon(50px 0%, calc(100% - 50px) 0%, 100% 50px, 100% 100%, calc(100% - 50px) 100%, 50px 100%, 0 100%, 0 0)`,
+        clipPath: `polygon(35px 0%, calc(100% - 35px) 0%, 100% 35px, 100% 100%, calc(100% - 35px) 100%, 35px 100%, 0 100%, 0 0)`,
         transform: `
           translate(-50%, -50%) 
           translateX(${(cardSize / 1.5) * position}px)
-          translateY(${isCenter ? -65 : position % 2 ? 15 : -15}px)
+          translateY(${isCenter ? -45 : position % 2 ? 15 : -15}px)
           rotate(${isCenter ? 0 : position % 2 ? 2.5 : -2.5}deg)
         `,
-        boxShadow: isCenter ? `0px 8px 0px 4px ${themeColor.shadow}` : "0px 0px 0px 0px transparent"
+        boxShadow: isCenter ? `0px 6px 0px 3px ${themeColor.shadow}` : "0px 0px 0px 0px transparent"
       }}>
       <span
         className="absolute block origin-top-right rotate-45 bg-gray-300"
         style={{
           right: -2,
-          top: 48,
+          top: 35,
           width: SQRT_5000,
           height: 2
         }} />
       <img
         src={testimonial.imgSrc}
         alt={`${testimonial.by.split(',')[0]}`}
-        className="mb-4 h-14 w-12 bg-gray-200 object-cover object-top rounded"
+        className="mb-3 sm:mb-4 h-11 w-10 sm:h-14 sm:w-12 bg-gray-200 object-cover object-top rounded"
         style={{
           boxShadow: "3px 3px 0px white"
         }} />
       <h3
         className={cn(
-          "text-base sm:text-xl font-medium",
+          "text-xs sm:text-base md:text-xl font-medium leading-snug sm:leading-relaxed",
           isCenter ? themeColor.text : "text-gray-900"
         )}>
         "{testimonial.testimonial}"
       </h3>
       <p
         className={cn(
-          "absolute bottom-8 left-8 right-8 mt-2 text-sm italic",
+          "absolute bottom-4 sm:bottom-8 left-5 sm:left-8 right-5 sm:right-8 text-[11px] sm:text-sm italic truncate",
           isCenter ? "text-white/80" : "text-gray-600"
         )}>
         - {testimonial.by}
@@ -139,8 +139,14 @@ export const StaggerTestimonials = () => {
 
   useEffect(() => {
     const updateSize = () => {
-      const { matches } = window.matchMedia("(min-width: 640px)");
-      setCardSize(matches ? 365 : 290);
+      const width = window.innerWidth;
+      if (width < 400) {
+        setCardSize(250);
+      } else if (width < 640) {
+        setCardSize(280);
+      } else {
+        setCardSize(365);
+      }
     };
 
     updateSize();
@@ -149,17 +155,17 @@ export const StaggerTestimonials = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white py-16 px-4 md:px-8">
+    <div className="bg-white py-8 sm:py-12 md:py-16 px-3 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'27</p>
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <p className="text-purple-600 text-xs sm:text-sm md:text-base font-semibold uppercase tracking-wider mb-2">Welcome to SCEECS'27</p>
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
             Precious remarks by Past Speakers
           </h1>
           <div className="flex justify-center">
             <svg
-              className="w-32 h-2 text-pink-400"
+              className="w-24 sm:w-32 h-2 text-pink-400"
               viewBox="0 0 128 4"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -176,8 +182,7 @@ export const StaggerTestimonials = () => {
 
         {/* Testimonials Section */}
         <div
-          className="relative w-full overflow-hidden bg-gray-50"
-          style={{ height: 600 }}>
+          className="relative w-full overflow-hidden bg-gray-50 h-[460px] sm:h-[520px] md:h-[600px] rounded-2xl border border-gray-100">
           {testimonialsList.map((testimonial, index) => {
             const position = testimonialsList.length % 2
               ? index - (testimonialsList.length + 1) / 2
@@ -191,26 +196,26 @@ export const StaggerTestimonials = () => {
                 cardSize={cardSize} />
             );
           })}
-          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-3">
             <button
               onClick={() => handleMove(-1)}
               className={cn(
-                "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
+                "flex h-11 w-11 sm:h-14 sm:w-14 items-center justify-center text-xl sm:text-2xl transition-colors rounded-lg",
                 "bg-white border-2 border-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-800",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 shadow-sm"
               )}
               aria-label="Previous testimonial">
-              <ChevronLeft />
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
             <button
               onClick={() => handleMove(1)}
               className={cn(
-                "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
+                "flex h-11 w-11 sm:h-14 sm:w-14 items-center justify-center text-xl sm:text-2xl transition-colors rounded-lg",
                 "bg-white border-2 border-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-800",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 shadow-sm"
               )}
               aria-label="Next testimonial">
-              <ChevronRight />
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
           </div>
         </div>

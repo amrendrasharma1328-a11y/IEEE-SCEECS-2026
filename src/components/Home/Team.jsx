@@ -1,41 +1,42 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import { PixelImage } from '../pixel-image';
 // order is changing 
 const teamMembers = [
   {
     name: "Dr. Vijay Bhaskar Semwal",
     role: "Finance Chair",
-    image: "/About_Images/VijayBhaskarSemwal.jpg",
+    image: cloudinaryImage("/About_Images/VijayBhaskarSemwal.jpg"),
     membershipNo: null
   },
   // 
   {
     name: "Dr. Priyanka Paliwal",
     role: "Program Chair",
-    image: "/About_Images/priyanka.jpeg",
+    image: cloudinaryImage("/About_Images/priyanka.jpeg"),
     membershipNo: "92215569"
   },
   {
     name: "Ms. Rahul Agarwal",
     role: "Organizing Co-Chair",
-    image: "/About_Images/RahulAgarwal.jpg",
+    image: cloudinaryImage("/About_Images/RahulAgarwal.jpg"),
     membershipNo: "101833521"
   },
   {
     name: "Mr. Ayush Kumar",
     role: "Publication Co-Chair",
-    image: "/About_Images/Ayush.jpg",
+    image: cloudinaryImage("/About_Images/Ayush.jpg"),
     membershipNo: "101641565"
   },
   {
     name: "Ms. Prerna Chaurasiya",
     role: "Program Co-Chair",
-    image: "/About_Images/prerna.jpeg",
+    image: cloudinaryImage("/About_Images/prerna.jpeg"),
     membershipNo: " 101835115"
   },
   {
     name: "Ms. Tanvi Sundarkar",
     role: "Finance Co-Chair",
-    image: "/About_Images/tanvi.jpg",
+    image: cloudinaryImage("/About_Images/tanvi.jpg"),
     membershipNo: "101833618"
   }
 ];

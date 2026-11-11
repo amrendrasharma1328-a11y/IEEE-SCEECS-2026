@@ -1,29 +1,30 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import { motion } from 'framer-motion';
 
 const technicalSponsors = [
   {
     name: "IEEE Xplore Digital Library",
-    image: "/About_Images/2.png",
+    image: cloudinaryImage("/About_Images/2.png"),
     alt: "IEEE Xplore Digital Library"
   },
   {
     name: "IEEE Standards Association",
-    image: "/About_Images/5.png",
+    image: cloudinaryImage("/About_Images/5.png"),
     alt: "IEEE Standards Association"
   },
   {
     name: "IEEE Technology Navigator",
-    image: "/About_Images/6.png",
+    image: cloudinaryImage("/About_Images/6.png"),
     alt: "IEEE Technology Navigator"
   },
   {
     name: "IEEE Spectrum",
-    image: "/About_Images/7.png",
+    image: cloudinaryImage("/About_Images/7.png"),
     alt: "IEEE Spectrum"
   },
   {
     name: "IEEE TV",
-    image: "/About_Images/16.png",
+    image: cloudinaryImage("/About_Images/16.png"),
     alt: "IEEE TV"
   }
 ];

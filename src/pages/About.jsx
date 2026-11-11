@@ -1,3 +1,4 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import Gallery from '../components/Home/Gallery';
 import Team from '../components/Home/Team';
 import HeroVideo from '../components/hero-video';
@@ -6,7 +7,6 @@ import { Presentation, Users, FileText, Laptop } from 'lucide-react';
 import Hero from '@/components/Hero';
 import ManitAbout from '../components/Home/ManitAbout';
 import IEEEManitBranch from '../components/Home/IEEEManitBranch';
-
 
 const features = [
   {
@@ -20,7 +20,7 @@ const features = [
   },
   {
     icon: Users,
-    title: "Guest Lectures",
+    title: "Past Speakers",
     description: "An experience that will enlighten your mind with innovations and creativity.",
     bgColor: "bg-white",
     iconColor: "text-orange-600",
@@ -50,19 +50,19 @@ const features = [
 function About() {
   return (
     <div className="min-h-screen bg-white mt-8">
-      <Hero src="/background/10.jpg" content="About Us" />
+      <Hero src={cloudinaryImage("/background/10.jpg")} content="About Us" />
       {/* Header Section */}
-      <div className="py-16 px-4 md:px-8 bg-white">
+      <div className="py-8 sm:py-12 md:py-16 px-4 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Title Section */}
           <div className="text-center mb-8 md:mb-12">
-            <p className="text-purple-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium uppercase tracking-wide mb-3 sm:mb-4">
+            <p className="text-purple-600 text-xs sm:text-sm md:text-base font-semibold uppercase tracking-wider mb-2 sm:mb-3">
               ABOUT SCEECS
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-6">
               SCEECS 2027
             </h1>
-            <div className="flex justify-center mb-6 sm:mb-8">
+            <div className="flex justify-center mb-4 sm:mb-8">
               <svg
                 className="w-24 sm:w-32 h-2 text-pink-400"
                 viewBox="0 0 128 4"
@@ -77,32 +77,32 @@ function About() {
                 />
               </svg>
             </div>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed px-4">
+            <p className="text-gray-700 text-xs sm:text-sm md:text-base max-w-4xl mx-auto leading-relaxed px-2 sm:px-4">
               IEEE International Students' Conference on Electrical, Electronics and Computer Sciences (SCEECS) is flagship conference of IEEE-MSB featuring comprehensive technical programs including paper presentations, workshops and expert guest lectures.
             </p>
           </div>
 
           {/* Feature Cards Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 md:gap-12">
             {features.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
                 <div
                   key={index}
-                  className={`${feature.bgColor} ${feature.cardShadow} p-8 h-full rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-200`}
+                  className={`${feature.bgColor} ${feature.cardShadow} p-5 sm:p-8 h-full rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-200`}
                 >
                   {/* Icon */}
-                  <div className="flex justify-center mb-6">
-                    <IconComponent className={`w-16 h-16 ${feature.iconColor}`} strokeWidth={1.5} />
+                  <div className="flex justify-center mb-4 sm:mb-6">
+                    <IconComponent className={`w-12 h-12 sm:w-16 sm:h-16 ${feature.iconColor}`} strokeWidth={1.5} />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 text-center mb-3 sm:mb-4">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 text-center mb-2 sm:mb-4">
                     {feature.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-700 text-sm sm:text-base text-center leading-relaxed">
+                  <p className="text-gray-700 text-xs sm:text-sm md:text-base text-center leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -125,19 +125,19 @@ function About() {
       <IEEEManitBranch />
 
       {/* Committee and Gallery Section */}
-      <div id="committee" className="py-16 px-4 md:px-8 bg-white">
+      <div id="committee" className="py-8 sm:py-12 md:py-16 px-4 md:px-8 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           {/* Organizing Committee Section Header */}
-          <div className="text-center mb-12">
-            <p className="text-purple-600 text-sm sm:text-base font-semibold uppercase tracking-wider mb-2">
+          <div className="text-center mb-8 sm:mb-12">
+            <p className="text-purple-600 text-xs sm:text-sm md:text-base font-semibold uppercase tracking-wider mb-2">
               Leadership & Organization
             </p>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
               Organizing Committee
             </h2>
             <div className="flex justify-center mb-4">
               <svg
-                className="w-32 h-2 text-pink-400"
+                className="w-24 sm:w-32 h-2 text-pink-400"
                 viewBox="0 0 128 4"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ function About() {
                 />
               </svg>
             </div>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-700 text-xs sm:text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
               Meet the faculty chairs, advisors, and organizing committee driving IEEE SCEECS 2027.
             </p>
           </div>
@@ -159,7 +159,7 @@ function About() {
           <Team />
 
           {/* Gallery Section */}
-          <div className="mt-24">
+          <div className="mt-12 sm:mt-24">
             <Gallery />
           </div>
         </div>

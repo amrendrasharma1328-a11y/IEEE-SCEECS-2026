@@ -30,31 +30,31 @@ const features = [
 
 function FeatureCards() {
   return (
-    <div className="min-h-screen bg-white py-16 px-4 md:px-8">
+    <div className="bg-white py-8 sm:py-12 md:py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
               <Card
                 key={index}
                 variant="neubrutalism"
-                className={`${feature.bgColor} p-8 h-full  hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200`}
+                className={`${feature.bgColor} p-5 sm:p-6 md:p-8 h-full hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200 !border-2 sm:!border-4 !border-black`}
               >
                 {/* Icon Circle */}
-                <div className="flex justify-center mb-6">
-                  <div className={`w-20 h-20 rounded-full ${feature.bgColor} border-4 ${feature.borderColor} flex items-center justify-center`}>
-                    <IconComponent className={`w-10 h-10 ${feature.iconColor}`} strokeWidth={1.5} />
+                <div className="flex justify-center mb-4 sm:mb-6">
+                  <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full ${feature.bgColor} border-2 sm:border-4 ${feature.borderColor} flex items-center justify-center`}>
+                    <IconComponent className={`w-8 h-8 sm:w-10 sm:h-10 ${feature.iconColor}`} strokeWidth={1.5} />
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 text-center mb-3 sm:mb-4">
                   {feature.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-700 text-center leading-relaxed">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base text-center leading-relaxed">
                   {feature.description}
                 </p>
               </Card>

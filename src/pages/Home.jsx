@@ -1,3 +1,4 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import HowItWorkTimeline from "../components/Home/Timeline";
 import TracksAndTopics from "../components/Home/TracksAndTopics";
 import Gallery from "../components/Home/Gallery";
@@ -30,7 +31,7 @@ function Home() {
 ];
   return (
     <div>
-      <Hero src="/background/conference.jpg" content="IEEE SCEECS 2027" dates="30th Jan - 31st Jan 2027, Bhopal, India." buttonContent={button} />
+      <Hero src={cloudinaryImage("/background/conference.jpg")} content="IEEE SCEECS 2027" dates="30th Jan - 31st Jan 2027, Bhopal, India." buttonContent={button} />
       <EventTimerSection />
       <VideoShowcase />
       <About />

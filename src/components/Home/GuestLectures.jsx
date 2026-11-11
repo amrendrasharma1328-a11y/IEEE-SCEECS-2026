@@ -1,3 +1,4 @@
+import { cloudinaryImage } from '@/utils/cloudinary';
 import { FeatureSteps } from '../feature-section';
 import { Link } from 'react-router-dom';
 
@@ -6,25 +7,25 @@ const speakers = [
     title: "Love Babbar",
     step: "Expert Speaker",
     content: "Renowned expert in technology and innovation, bringing years of industry experience and cutting-edge insights to inspire the next generation of engineers and researchers.",
-    image: "/guest/final.webp"
+    image: cloudinaryImage("/guest/final.webp")
   },
   {
     title: "Sunchit Dudeja",
     step: "Expert Speaker",
     content: "Renowned expert in technology and innovation, bringing years of industry experience and cutting-edge insights to inspire the next generation of engineers and researchers.",
-    image: "/guest/sunchit_dudeja.jpeg"
+    image: "https://res.cloudinary.com/djqx5qrb1/image/upload/v1794368029/sunchit_dudeja_rrfp94.jpg"
   },
   {
     title: "Kamran Ali",
     step: "Industry Leader",
     content: "Distinguished professional with extensive expertise in engineering and research, sharing valuable knowledge and practical insights from years of groundbreaking work.",
-    image: "/guest/kamran_ali.jpeg"
+    image: cloudinaryImage("/guest/kamran_ali.jpeg")
   },
   {
     title: "Many More",
     step: "Distinguished Speakers",
     content: "Join us for an exciting lineup of distinguished speakers and industry leaders who will share their expertise and insights at SCEECS 2027.",
-    image: "/guest/lakshya_kumar.jpeg"
+    image: cloudinaryImage("lakshya_kumar.jpeg")
   }
 ];
 
@@ -36,7 +37,7 @@ function GuestLectures() {
         <div className="text-center mb-12">
           <p className="text-purple-600 text-lg font-medium mb-2">Welcome to SCEECS'27</p>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
-            Guest Lectures
+            Past Speakers
           </h1>
           <div className="flex justify-center mb-6">
             <svg

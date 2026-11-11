@@ -38,7 +38,7 @@ function Header() {
                 to="/guestlecturers"
                 className="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200"
               >
-                Guest Lecturers
+                Past Speakers
               </Link>
             </li>
             <li>
